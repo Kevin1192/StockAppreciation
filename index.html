@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Stock Appreciation</title>
+    <meta name="description" content="Stock Appreciation" />
+    <link rel="stylesheet" href="./style/bootstrap.css" />
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+
+  <body>
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <h1>Stock Appreciation</h1>
+      <h2>Company</h2>
+      <h3 id="stockp"></h3>
+      <div class="d-flex">
+        <form class="form-inline form-1">
+        <div class="input-group">
+          <input
+            type="number" placeholder="Years"
+            class="form-control input-1"
+            aria-label="Text input with dropdown button"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Choose
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">1</a>
+              <a class="dropdown-item" href="#">2</a>
+              <a class="dropdown-item" href="#">5</a>
+              <a class="dropdown-item" href="#">10</a>
+              <a class="dropdown-item" href="#">15</a>
+              <a class="dropdown-item" href="#">20</a>
+            </div>
+          </div>
+        </div>
+        <input id="stockbtn" class="btn btn-primary" type="submit"></input>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script/jquery-3.5.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script/index.js"></script>
+  </body>
+</html>
