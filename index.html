@@ -11,17 +11,24 @@
   </head>
 
   <body>
-    <div class="d-flex flex-column justify-content-center align-items-center">
+    <div class="d-flex">
+    <div class="d-flex flex-column justify-content-around align-items-center container">
       <h1>Stock Appreciation</h1>
-      <h2>Company</h2>
-      <h3 id="stockp"></h3>
-      <div class="d-flex">
+      <h4 id='company-symbol-3'>SYMBOL</h4>
+      <div class="input-group mb-3 input-search">
+  <input type="text" class="form-control company-name" placeholder="Search Stock By Name Or Symbol" aria-label="Search Company By Name Or Symbol" aria-describedby="basic-addon2" required>
+  <div class="input-group-append">
+    <span class="input-group-text btn btn-primary" id="basic-addon2">Search</span>
+  </div>
+</div>
+      <div class="d-flex choose-year-month">
         <form class="form-inline form-1">
         <div class="input-group">
           <input
             type="number" placeholder="Years"
-            class="form-control input-1"
+            class="form-control input-1 input-year"
             aria-label="Text input with dropdown button"
+            min='0' max='20' step='1' required
           />
           <div class="input-group-append">
             <button
@@ -31,22 +38,60 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Choose
+              Years
             </button>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">1</a>
-              <a class="dropdown-item" href="#">2</a>
-              <a class="dropdown-item" href="#">5</a>
-              <a class="dropdown-item" href="#">10</a>
-              <a class="dropdown-item" href="#">15</a>
-              <a class="dropdown-item" href="#">20</a>
+              <a class="dropdown-year dropdown-item" href="#">1</a>
+              <a class="dropdown-year dropdown-item" href="#">2</a>
+              <a class="dropdown-year dropdown-item" href="#">5</a>
+              <a class="dropdown-year dropdown-item" href="#">10</a>
+              <a class="dropdown-year dropdown-item" href="#">15</a>
+              <a class="dropdown-year dropdown-item" href="#">20</a>
+            </div>
+          </div>
+        </div>
+
+                <div class="input-group">
+          <input
+            type="number" placeholder="Months"
+            class="form-control input-month input-1"
+            aria-label="Text input with dropdown button"
+            min='0' max='11' step='1' required
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Months
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item dropdown-month" href="#">0</a>
+              <a class="dropdown-item dropdown-month" href="#">1</a>
+              <a class="dropdown-item dropdown-month" href="#">2</a>
+              <a class="dropdown-item dropdown-month" href="#">3</a>
+              <a class="dropdown-item dropdown-month" href="#">4</a>
+              <a class="dropdown-item dropdown-month" href="#">5</a>
+              <a class="dropdown-item dropdown-month" href="#">6</a>
+              <a class="dropdown-item dropdown-month" href="#">7</a>
+              <a class="dropdown-item dropdown-month" href="#">8</a>
+              <a class="dropdown-item dropdown-month" href="#">9</a>
+              <a class="dropdown-item dropdown-month" href="#">10</a>
+              <a class="dropdown-item dropdown-month" href="#">11</a>
             </div>
           </div>
         </div>
         <input id="stockbtn" class="btn btn-primary" type="submit"></input>
         </form>
       </div>
+<div class="company-display"></div>
     </div>
+          <h6 id="stockp"></h6>
+    </div>
+
 
     <script src="./script/jquery-3.5.0.min.js"></script>
     <script
