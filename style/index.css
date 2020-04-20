@@ -25,3 +25,17 @@ tbody tr:hover {
 .choose-year-month {
     margin-top: 50px;
 }
+
+img {
+    align-self: center ;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.changeQuote {
+    align-self: center;
+    margin: 30px 0;
+}
