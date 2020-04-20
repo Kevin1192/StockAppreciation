@@ -22,3 +22,6 @@ tbody tr:hover {
     padding: 30px 50px;
     line-height: 3;
 }
+.choose-year-month {
+    margin-top: 50px;
+}

@@ -11,17 +11,34 @@
   </head>
 
   <body>
+    <h1>Stock Appreciation</h1>
+          <!-- jumbtron -->
+      <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Fluid jumbotron</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+
+  </div>
+</div>
+
+<!--  -->
+
     <div class="d-flex">
     <div class="d-flex flex-column justify-content-around align-items-center container">
-      <h1>Stock Appreciation</h1>
+
       <h4 id='company-symbol-3'>SYMBOL</h4>
+
       <div class="input-group mb-3 input-search">
   <input type="text" class="form-control company-name" placeholder="Search Stock By Name Or Symbol" aria-label="Search Company By Name Or Symbol" aria-describedby="basic-addon2" required>
   <div class="input-group-append">
     <span class="input-group-text btn btn-primary" id="basic-addon2">Search</span>
   </div>
 </div>
-      <div class="d-flex choose-year-month">
+  <h5>or</h5>
+  <button class="btn btn-primary try-random">Try a Random Company</button>
+      <div class="d-flex choose-year-month flex-column">
+        <h6>Choose year and month, then click submit</h6>
         <form class="form-inline form-1">
         <div class="input-group">
           <input
@@ -86,10 +103,15 @@
         </div>
         <input id="stockbtn" class="btn btn-primary" type="submit"></input>
         </form>
+        <h6>The maximum year is 20 years. <br>(if the stock is less than 20 years old, the oldest price will be used)</h6>
+
       </div>
-<div class="company-display"></div>
+      <div class="company-display"></div>
     </div>
-          <h6 id="stockp"></h6>
+
+    <div class="d-flex flex-column stock-appreciation">
+      <h6 id="stockp"></h6>
+      </div>
     </div>
 
 
